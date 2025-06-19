@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking - Book Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Trip</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plan.html">Plan Your Trip</a>
+            <a href="booking.html">Book Now</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="inspire.html">Inspire</a>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Plan Your Dream Vacation</h2>
+            <form action="submit_booking.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="destination">Choose Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="paris">Paris</option>
+                    <option value="bali">Bali</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="maldives">Maldives</option>
+                </select>
+
+                <label for="package">Choose Your Package:</label>
+                <select id="package" name="package" required>
+                    <option value="budget">Budget</option>
+                    <option value="family">Family</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+
+                <label for="dates">Travel Dates:</label>
+                <input type="date" id="dates" name="dates" required>
+
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers" min="1" max="20" required>
+
+                <label for="preferences">Special Preferences:</label>
+                <textarea id="preferences" name="preferences" rows="4" placeholder="Enter any specific requirements or preferences..."></textarea>
+
+                <button type="submit" class="button">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Wanderly. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
