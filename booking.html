@@ -3,64 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderly</title>
+    <title>Book Your Trip | Wanderly</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Book Your Trip</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="plan.html">Plan Your Trip</a>
-            <a href="booking.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="help.html">Help</a>
-            <a href="inspire.html">Inspire</a>
-          </nav>
+        <div class="header-content">
+            <h1>Wanderly</h1>
+            <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="plan.html">Destinations</a>
+  <a href="booking.html">Book Now</a>
+  <a href="inspire.html">Travel Tips</a>
+  <a href="help.html">Help</a>
+</nav>
+        </div>
     </header>
+
     <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <div class="hero-content">
+                <h2>Book Your Dream Vacation</h2>
+                <p>Fill out the form below and our travel experts will get back to you within 24 hours.</p>
+            </div>
+        </section>
+
         <section>
-            <h2>Plan Your Dream Vacation</h2>
-            <form action="submit_booking.php" method="POST">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <div class="form-container">
+                <h2>Travel Details</h2>
+                <form action="submit_booking.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="destination">Choose Destination</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Select a destination</option>
+                            <option value="paris">Paris, France</option>
+                            <option value="bali">Bali, Indonesia</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="maldives">Maldives</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Choose Your Package</label>
+                        <select id="package" name="package" required>
+                            <option value="">Select a package</option>
+                            <option value="budget">Budget</option>
+                            <option value="family">Family</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dates">Travel Dates</label>
+                        <input type="date" id="dates" name="dates" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" name="travelers" min="1" max="20" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferences">Special Preferences</label>
+                        <textarea id="preferences" name="preferences" rows="4" placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="button">Submit Booking Request</button>
+                </form>
+            </div>
+        </section>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-
-                <label for="destination">Choose Destination:</label>
-                <select id="destination" name="destination" required>
-                    <option value="paris">Paris</option>
-                    <option value="bali">Bali</option>
-                    <option value="tokyo">Tokyo</option>
-                    <option value="maldives">Maldives</option>
-                </select>
-
-                <label for="package">Choose Your Package:</label>
-                <select id="package" name="package" required>
-                    <option value="budget">Budget</option>
-                    <option value="family">Family</option>
-                    <option value="luxury">Luxury</option>
-                </select>
-
-                <label for="dates">Travel Dates:</label>
-                <input type="date" id="dates" name="dates" required>
-
-                <label for="travelers">Number of Travelers:</label>
-                <input type="number" id="travelers" name="travelers" min="1" max="20" required>
-
-                <label for="preferences">Special Preferences:</label>
-                <textarea id="preferences" name="preferences" rows="4" placeholder="Enter any specific requirements or preferences..."></textarea>
-
-                <button type="submit" class="button">Submit Booking</button>
-            </form>
+        <section>
+            <h2>Need Assistance?</h2>
+            <p>Our travel consultants are available 24/7 to help you with your booking.</p>
+            <a href="help.html" class="button secondary-button">Contact Support</a>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Wanderly. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Wanderly</h3>
+                <p>Making travel dreams come true since 2025.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan.html">Destinations</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Wanderly. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
