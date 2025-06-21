@@ -3,54 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderly</title>
+    <title>Wanderly - Discover Your Next Adventure</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Wanderly</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="plan.html">Plan Your Trip</a>
-            <a href="booking.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="help.html">Help</a>
-            <a href="inspire.html">Inspire</a>
-        </nav>
+        <div class="header-content">
+            <h1>Wanderly</h1>
+            <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="plan.html">Destinations</a>
+  <a href="booking.html">Book Now</a>
+  <a href="inspire.html">Travel Tips</a>
+  <a href="help.html">Help</a>
+</nav>
+        </div>
     </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Explore breathtaking destinations and create unforgettable memories with our expertly crafted travel experiences.</p>
+            <a href="plan.html" class="button">Explore Destinations</a>
+        </div>
+    </section>
+
     <main>
         <section>
-            <h2>Your Next Adventure Awaits</h2>
-            <p>Discover breathtaking destinations and curate your dream travel experiences with us. Whether it's a serene beach or a bustling city, we've got it all.</p>
-            <a href="plan.html" class="button">Explore Destinations</a>
+            <h2>Popular Destinations</h2>
+            <p>Check out our most sought-after travel destinations that our customers love.</p>
+            
+            <div class="destinations">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Paris" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>The city of love, art, and exquisite cuisine.</p>
+                        <div class="price">From ₹41,500</div>
+                        <a href="booking.html?destination=paris" class="button">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bali" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with lush jungles and pristine beaches.</p>
+                        <div class="price">From ₹37,500</div>
+                        <a href="booking.html?destination=bali" class="button">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tokyo" class="destination-img">
+                    <div class="destination-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Where ancient tradition meets cutting-edge technology.</p>
+                        <div class="price">From ₹49,500</div>
+                        <a href="booking.html?destination=tokyo" class="button">Book Now</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section>
-            <h2>Our Services</h2>
-            <div class="service-card">
-                <h3>Flight Bookings</h3>
-                <p>We provide the best deals on international and domestic flights.</p>
-            </div>
-            <div class="service-card">
-                <h3>Hotel Reservations</h3>
-                <p>Luxury and budget options tailored to your needs.</p>
-            </div>
-            <div class="service-card">
-                <h3>Tour Packages</h3>
-                <p>Pre-planned packages to save time and ensure you don't miss out.</p>
+            <h2>Why Choose Wanderly?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>100+ Destinations</h3>
+                    <p>Explore our extensive collection of hand-picked locations worldwide.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We promise the best rates for all our travel packages.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our travel experts are always ready to assist you.</p>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>24/7 Customer Support</li>
-                <li>Affordable Pricing</li>
-                <li>Customizable Packages</li>
-                <li>Trusted by Millions</li>
-            </ul>
+
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p class="testimonial-content">"The Paris package was phenomenal. Great value for money and excellent service throughout the trip!"</p>
+                    <p class="testimonial-author">- Yash Wadhvani</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Get Travel Deals & Inspiration</h2>
+            <p>Subscribe to our newsletter and receive exclusive offers and travel tips straight to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="button">Subscribe</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Wanderly. All rights reserved. | <a href="help.html">Contact Us</a></p>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Wanderly</h3>
+                <p>Making travel dreams come true since 2025.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan.html">Destinations</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Wanderly. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
