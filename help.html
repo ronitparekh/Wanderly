@@ -1,58 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wanderly</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support | Wanderly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Help & Support</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="plan.html">Plan Your Trip</a>
-      <a href="booking.html">Book Now</a>
-      <a href="about.html">About</a>
-      <a href="help.html">Help</a>
-      <a href="inspire.html">Inspire</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Contact Us</h2>
-      <form action="submit_contact.html" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+    <header>
+        <div class="header-content">
+            <h1>Wanderly</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="plan.html">Destinations</a>
+  <a href="booking.html">Book Now</a>
+  <a href="inspire.html">Travel Tips</a>
+  <a href="help.html">Help</a>
+</nav>
+        </div>
+    </header>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+    <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+            <div class="hero-content">
+                <h2>Help & Support</h2>
+                <p>We're here to help you with any questions or concerns about your travel plans.</p>
+            </div>
+        </section>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <section>
+            <h2>Contact Our Team</h2>
+            <p>Have a question or need assistance? Fill out the form below and we'll get back to you within 24 hours.</p>
+            
+            <div class="form-container">
+                <form action="submit_contact.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-        <button type="submit" class="button">Send Message</button>
-      </form>
-    </section>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-    <section>
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <h3>How do I book a trip?</h3>
-        <p>Go to our <a href="booking.html">Booking Page</a>, fill out the form, and submit your details.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I cancel my booking?</h3>
-        <p>Yes, cancellations are allowed up to 48 hours before departure. Additional charges may apply.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Do you offer group discounts?</h3>
-        <p>Yes, group discounts are available for 5+ travelers. Contact us for more details.</p>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Wanderly. All rights reserved. | <a href="help.html">Contact Us</a></p>
-  </footer>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I book a trip?</h3>
+                <div class="faq-answer">
+                    <p>Booking with Wanderly is easy! Simply visit our <a href="booking.html">Booking Page</a>, select your destination and package, fill out the form with your details, and submit. Our travel experts will review your request and get back to you with confirmation and payment details within 24 hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I cancel my booking?</h3>
+                <div class="faq-answer">
+                    <p>Yes, cancellations are allowed up to 48 hours before departure. Please note that cancellation fees may apply depending on your package and how close to the departure date you cancel. For specific cancellation policies, please refer to the terms of your selected package or contact our support team.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you offer group discounts?</h3>
+                <div class="faq-answer">
+                    <p>Absolutely! We offer special discounts for groups of 5 or more travelers. Group discounts can range from 5% to 15% depending on the size of your group and the destination. Contact our group travel specialists for a customized quote and to learn about additional benefits we offer for group travelers.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards (Visa, MasterCard, American Express), bank transfers, and several digital payment platforms. For your security, all payments are processed through our encrypted payment gateway.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you provide travel insurance?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we strongly recommend travel insurance for all our packages. We partner with leading insurance providers to offer comprehensive coverage options that include trip cancellation, medical emergencies, lost luggage, and more. You can add insurance during the booking process or contact us to add it later.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Emergency Support</h2>
+            <p>For urgent assistance during your trip, please contact our 24/7 emergency support line:</p>
+            <div class="emergency-contact">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+911234567890">+91 12345 67890</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Wanderly</h3>
+                <p>Making travel dreams come true since 2025.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan.html">Destinations</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Wanderly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
